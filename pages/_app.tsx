@@ -1,10 +1,12 @@
 import Head from 'next/head';
 import { AppProps } from 'next/app';
-
+import { ThemeProvider } from 'next-themes';
+import '../styles/global.css';
+import '../styles/normalize.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider>
       <Head>
         <meta charSet="utf-8" />
         <meta
@@ -14,9 +16,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
         <title>Devef - SergioEric</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+        {/* <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" /> */}
       </Head>
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
