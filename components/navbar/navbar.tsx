@@ -47,7 +47,7 @@ const NavBar = () => {
           }
 
           .navbar__container nav {
-            margin-top: 10px;
+            padding-top: 10px;
           }
         }
       `}</style>
