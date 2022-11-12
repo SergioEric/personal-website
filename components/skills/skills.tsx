@@ -1,9 +1,4 @@
-interface Props {
-  skillName: string;
-  time: string;
-}
-
-const SoftSkills = ({ skillName, time }: Props) => (
+const SoftSkills = ({ skillName, time }: { skillName: string; time: string }) => (
   <div className="skills__container">
     <div className="content flex col center">
       <p className="skill_name">{skillName}</p>

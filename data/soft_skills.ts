@@ -1,23 +1,23 @@
 const sotfSkill = [
     {
-        name:"Flutter dev",
+        name: "Flutter",
         since: 2019,
-        abilities:["Skills description here.","Skills description here.","Skills description here."],
+        abilities: ["Responsive UI", "Material Design",],
     },
     {
-        name:"CSS/JS",
-        since: 2014,
-        abilities:["Skills description here.","Skills description here.","Skills description here."],
-    },
-    {
-        name:"React.js",
+        name: "CSS/JS",
         since: 2018,
-        abilities:["Skills description here.","Skills description here.","Skills description here."],
+        abilities: ["Grid, Flex", "Responsive", "SEO"],
     },
     {
-        name:"Figma",
+        name: "React.js",
         since: 2019,
-        abilities:["Skills description here.","Skills description here.","Skills description here."],
+        abilities: ["Hooks", "Context/reducer", "Typescript", "Next.js", "MUI"],
+    },
+    {
+        name: "Figma",
+        since: 2019,
+        abilities: ["Design System", "UI kit", "Components and Variants"],
     },
 ]
 

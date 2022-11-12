@@ -32,6 +32,10 @@ export default function Home() {
         * {
           //outline: 1px solid;
         }
+        main {
+          max-width: 1280px;
+          margin: 0 auto;
+        }
         .all_content {
           position: relative;
           //border: 1px solid red;
@@ -47,7 +51,6 @@ export default function Home() {
           font-size: 2.5rem;
           line-height: 3.125rem;
           text-align: center;
-          max-width: 1280px;
           margin-top: 2em;
         }
 
@@ -68,6 +71,7 @@ export default function Home() {
 
         .soft_skills__container {
           margin-top: 4em;
+          width: 100%;
         }
 
         @media (max-width: 576px) {
@@ -89,17 +93,19 @@ const calc_years = (since: number) => {
 };
 
 const RawSoftSkills = () => (
-  <div className="container flex center">
+  <div className="container center">
     {sotfSkill.map((skill) => (
       <div className="specific_skill flex col center" key={skill.name}>
         <SoftSkills skillName={skill.name} time={`${calc_years(skill.since)}`} />
         <div style={{ height: '1em' }}></div>
-        {skill.abilities.map((ability, index) => (
-          <div className="flex center" style={{ gap: '10px' }} key={index}>
-            <div className="dot"></div>
-            <p>{ability}</p>
-          </div>
-        ))}
+        <div className="abilities">
+          {skill.abilities.map((ability, index) => (
+            <div className="flex center-y" style={{ gap: '10px' }} key={index}>
+              <div className="dot"></div>
+              <p>{ability}</p>
+            </div>
+          ))}
+        </div>
       </div>
     ))}
 
@@ -109,10 +115,15 @@ const RawSoftSkills = () => (
       }
       .container {
         gap: 20px;
-        flex-wrap: wrap;
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       }
 
       .specific_skill {
+      }
+      .abilities {
+        display: grid;
       }
       ul {
         margin: 0.4em 0;

@@ -54,6 +54,14 @@ body {
   align-items: center;
 }
 
+.center-y {
+  align-items: center;
+}
+
+.center-x {
+  justify-content: center;
+}
+
 .row {
   flex-direction: row;
 }
@@ -80,5 +88,3 @@ p {
   margin: 0;
 }
 
-/* .devef__logo {
-} */
