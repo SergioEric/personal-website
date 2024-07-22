@@ -16,7 +16,7 @@ export default function Home() {
       <NavBar />
       <main className="flex col center">
         <p className="who_ami">
-          I'm <span> Sergio Eric</span>. Software Engineer by career, ui designer by passion focus
+          I'm <span> Sergio Eric</span>. Software Engineer focus
           on create valuable products.
         </p>
         <section className="soft_skills__container">
@@ -29,9 +29,6 @@ export default function Home() {
       <Footer />
 
       <style jsx>{`
-        * {
-          //outline: 1px solid;
-        }
         main {
           max-width: 1280px;
           margin: 0 auto;

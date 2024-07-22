@@ -40,6 +40,13 @@ body {
   /* LOGO */
   --logo-path: url('/devef_white.webp');
 }
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
 
 .flex {
   display: flex;

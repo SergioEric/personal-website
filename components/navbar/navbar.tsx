@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useTheme } from 'next-themes';
 
 const logo_size = 40;
@@ -8,21 +9,27 @@ const NavBar = () => {
   return (
     <div className="navbar__container flex">
       <div className="logo_wrapper">
-        <Image
-          src={logo_path}
-          layout="fixed"
-          width={logo_size}
-          height={logo_size}
-          objectFit="fill"
-        />
+        <Link href="/">
+          <Image
+            src={logo_path}
+            layout="fixed"
+            width={logo_size}
+            height={logo_size}
+            objectFit="fill"
+          />
+        </Link>
       </div>
-      {/* <div style={{ flexGrow: 1 }}></div> */}
 
       <nav>
         <ul className="flex">
-          <li>About-me</li>
-          <li>Portfolio</li>
-          <li>Projects</li>
+          <li>
+            <Link href="/me">About-me</Link>{' '}
+          </li>
+          <li>
+            <Link href="/contact-me">Contact</Link>{' '}
+          </li>
+          {/* <li>Portfolio</li>
+          <li>Projects</li> */}
         </ul>
       </nav>
       <div style={{ width: `${logo_size}px` }}></div>
