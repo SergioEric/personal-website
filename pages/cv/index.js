@@ -31,7 +31,7 @@ export default function CV() {
         >
           <iframe
             src={`CV-ES.pdf`}
-            title="Documento PDF"
+            title="CV-ES Sergio Morales"
             style={{ width: '100%', height: '100%' }}
             frameBorder="0"
           />
