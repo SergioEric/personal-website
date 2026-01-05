@@ -1,5 +1,14 @@
 module.exports = {
   images: {
-    domains: ['image.freepik.com','freepik.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'image.freepik.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'freepik.com',
+      },
+    ],
   },
 }

@@ -12,10 +12,10 @@ const NavBar = () => {
         <Link href="/">
           <Image
             src={logo_path}
-            layout="fixed"
             width={logo_size}
             height={logo_size}
-            objectFit="fill"
+            alt="Logo"
+            style={{ objectFit: 'fill' }}
           />
         </Link>
       </div>
