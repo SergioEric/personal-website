@@ -1,87 +1,8 @@
-// import Head from 'next/head';
-import React, { useState } from 'react';
-import Image from 'next/image';
-import NavBar from '@components/navbar/navbar';
-import SoftSkills from '@components/skills/skills';
-import Footer from '@components/footer/footer';
+import React from 'react';
+import Link from 'next/link';
 import sotfSkill from '@data/soft_skills';
-
-export default function Home() {
-  const [isActive, setstate] = useState(false);
-  const list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-  const otherList = [...list, ...list, ...list, ...list];
-
-  return (
-    <div className="all_content flex col">
-      <NavBar />
-      <main className="flex col center">
-        <p className="who_ami">
-          I'm <span> Sergio Eric</span>. Software Engineer focus
-          on create valuable products.
-        </p>
-        <section className="soft_skills__container">
-          <p className="soft_skills__title">SoftSkills</p>
-          <RawSoftSkills />
-        </section>
-      </main>
-
-      <div style={{ flexGrow: 1, width: '100%', height: '100' }}></div>
-      <Footer />
-
-      <style jsx>{`
-        main {
-          max-width: 1280px;
-          margin: 0 auto;
-        }
-        .all_content {
-          position: relative;
-          //border: 1px solid red;
-          height: 100vh;
-        }
-
-        .title {
-          text-align: center;
-        }
-
-        .who_ami {
-          font-weight: 700;
-          font-size: 2.5rem;
-          line-height: 3.125rem;
-          text-align: center;
-          margin-top: 2em;
-        }
-
-        .who_ami span {
-          color: rgba(63, 168, 209, 1);
-        }
-
-        .soft_skills__title {
-          font-weight: bold;
-          font-size: 30px;
-          line-height: 39px;
-
-          text-align: center;
-
-          color: #54a4b6;
-          margin-bottom: 1em;
-        }
-
-        .soft_skills__container {
-          margin-top: 4em;
-          width: 100%;
-        }
-
-        @media (max-width: 576px) {
-          .who_ami {
-            font-size: 1.7em;
-            line-height: 2.5rem;
-            padding: 0 1rem;
-          }
-        }
-      `}</style>
-    </div>
-  );
-}
+import Layout from '@components/layout/layout';
+import ProjectCard from '@components/project-card/project-card';
 
 const calc_years = (since: number) => {
   const thisYear = new Date().getFullYear();
@@ -89,48 +10,172 @@ const calc_years = (since: number) => {
   return _since === 1 ? `${_since} year` : `${_since} years`;
 };
 
-const RawSoftSkills = () => (
-  <div className="container center">
-    {sotfSkill.map((skill) => (
-      <div className="specific_skill flex col center" key={skill.name}>
-        <SoftSkills skillName={skill.name} time={`${calc_years(skill.since)}`} />
-        <div style={{ height: '1em' }}></div>
-        <div className="abilities">
-          {skill.abilities.map((ability, index) => (
-            <div className="flex center-y" style={{ gap: '10px' }} key={index}>
-              <div className="dot"></div>
-              <p>{ability}</p>
+const getIconForSkill = (name: string) => {
+  const lower = name.toLowerCase();
+  if (lower.includes('flutter')) return 'smartphone';
+  if (lower.includes('react')) return 'code';
+  if (lower.includes('css') || lower.includes('js')) return 'javascript';
+  if (lower.includes('figma')) return 'design_services';
+  return 'dataset';
+};
+
+const projects = [
+  {
+    title: 'E-commerce Dashboard',
+    category: 'React • Dashboard',
+    description:
+      'Panel administrativo integral para gestión de inventario, análisis de ventas en tiempo real y gestión de usuarios.',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuC0WN6rbUvTaeLM8ZGNUZp3rm79cV4xZ3hYrnOS9CZ34NjITynfbTZu45FimetEU_o7FqzKZxa8HasyS4yCKPZGCIf5Cyh5uQLn6fAD85ztdRs_RCwU45-DkuOxdo-EYo2Q2HuTPkDL58P5xkmrhZKQhn7pZRYnYhxWFJIA-y0xDzp7ey2q2USQIN0Y7o8fVHyxryt-Zj2UZ-c9mZa-E_n4L-VplnovP7kg8oP8dI1tHy3-OgbYUv2N1_IkuS6HNBYJNvPltmqZ2Us',
+  },
+  {
+    title: 'Travel Companion',
+    category: 'iOS • Swift',
+    description:
+      'Aplicación nativa para iOS que permite planificar itinerarios colaborativos y descubrir joyas locales.',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuATyfBXZm-JGm7wpHhI_aoUz_Et9xaTpgYmxXCCygo572BP6o1Mm5VJ24SsPuiyuZvpfLcXo3UTa4UyuPd8CIEWOyvICSk9XFlKtN_H6C3Zsa5N3E6gbmktC-jDfsMVc5m-R-fW4TSvLm2PAemzKQy5JwxTQLb7XY3dmL9Ea86SI9PyEEuqZZwV0_Ikla5wqin6-G9SEHP1f6VFoidmOA5A_88hSRh36vNpFS4nBAFq0BZlT85iZZDrJDjZUdaYeSXLYKDklGpAD4Y',
+  },
+  {
+    title: 'Fintech Wallet',
+    category: 'Mobile • Flutter',
+    description:
+      'Billetera digital segura con integración bancaria, transferencias P2P y seguimiento de gastos.',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCsafQP4LUUxorknnqAEmid-V7_XhFtXM0N6IvbZsC_2YwJugFv9T0E4IenavIqA2U1_mzKvJoGZH1Q684f-k2KPDw2s0cJEFeBGmU8oU3OtUFRrl7Eos0se1bBhoNmRpKnIN1vNFqTBqita4kGDPgMOZcm6nx_-yG5oB5G8TY8pvVTF1g6DXSgtLhYcmumQpr5So8TOXcDUV6oxVdQXbWwS-pdWT05KLi0ygIa6dv0W25oVqhFaWR3MmP54uyhV-oKbLdvnWXlj4o',
+  },
+  {
+    title: 'Health Tracker',
+    category: 'Web • Vue.js',
+    description:
+      'Plataforma de bienestar para monitoreo de constantes vitales y rutinas de ejercicio personalizadas.',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuB9NylJssFPXk1dJhnlSXGkyaJLzGvXgUXwCj4AIxxCQEe66AfkDRxT89F365Uj6_u9wdKC6wGGJGwZhnUTUaHS4C-7cxEOpBawtPenElEgHKRCvY3xkD53YmcgL1A7dD-9ogeQMT0NVz-3yJUd-FXludwX8wXnNTBFZXy7rHqZYBhcv7uBmX5YS7zEuVYMkaS6_JyeLlMiaMSQuWnzKXGyVWv5fiOLpy3o3-SWaIaeEXFAKJz5YlcmB4JMDzCEAV23R60ZDEPGDTE',
+  },
+  {
+    title: 'Social Media API',
+    category: 'Backend • Node.js',
+    description:
+      'Arquitectura escalable de microservicios para soportar millones de usuarios concurrentes.',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuD0E8N92DhnNbF5yxjamtYT3xxra0N_BVpH9IB2UMA8Sgrqklr48tIY07rGPx2RNENpOYRKL-UhLsiqNp9By7QcuV9p_y8PnS4GYCNUsCGqN0qhwjOhLSdZlJ1uYuAPTtVaI1fSOkaIShEryQHMhcUfrVlIKBCeuAYhYJJv9kbzK-ExrYF-kLNCXl6AmdJ71icrFkfgV6OTYK8FiJ4l_pYQZguVIwDO8QYFK8LMPENJW1rPnk-9XozIGiekDszEg0Y193Alyuqnej8',
+  },
+  {
+    title: 'Real Estate Platform',
+    category: 'Full Stack • Next.js',
+    description:
+      'Marketplace inmobiliario con recorridos virtuales 3D y sistema de citas automatizado.',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDMHEVGH5Rte1rU_DolW_qtUAzD1yfCar7UymWNqVKTnbxu5evZtb-nZzYlOryQQRqu8N-zpzqz7sBU2oNnIw1c6C_Q7XBsznZT8C8KGbrVobWOd9ahNvRpLNtk42UMj00dPho2Ih-5ba5MGVLJijs8swVSMkj6Bg9lmq2FFgNIsT6nwhWy_RX92_7lH_bjEqFIYn1_OcaRnue-CED8vUfPCQw2xG_U09H-I4kv9eG5Q0WLU9iYFSUfU1jACao3Kab6YgcmiYlhago',
+  },
+];
+
+export default function Home() {
+  return (
+    <Layout>
+      {/* Hero Section */}
+      <section
+        className="w-full px-4 md:px-20 py-12 md:py-24 max-w-300"
+        id="about"
+      >
+        <div className="@container">
+          <div className="flex flex-col-reverse gap-10 md:gap-16 items-center md:flex-row">
+            {/* Text Content */}
+            <div className="flex flex-col gap-6 flex-1 text-center md:text-left items-center md:items-start">
+              <div className="flex flex-col gap-4">
+                <span className="inline-flex items-center rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-sm font-medium text-primary dark:text-indigo-300 ring-1 ring-inset ring-primary/20 w-fit mx-auto md:mx-0">
+                  Disponible para freelance
+                </span>
+                <h1 className="text-4xl md:text-6xl font-black leading-[1.1] tracking-tight">
+                  Hola, soy Sergio Eric. <br />
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-purple-400">
+                    Software Engineer
+                  </span>{' '}
+                  focus on create valuable products.
+                </h1>
+                <p className="text-slate-600 dark:text-slate-300 text-lg md:text-xl font-normal leading-relaxed max-w-xl">
+                  Desarrollador Full Stack especializado en Flutter, React.js y
+                  Diseño. Creo interfaces limpias, accesibles y escribo código
+                  eficiente que escala.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
+                <a
+                  href="#work"
+                  className="flex items-center justify-center rounded-full h-12 px-8 bg-primary text-white text-base font-bold shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 transition-all"
+                >
+                  Ver Proyectos
+                </a>
+                <Link
+                  href="/cv"
+                  className="flex items-center justify-center rounded-full h-12 px-8 bg-white dark:bg-[#292348] border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-base font-bold hover:bg-slate-50 dark:hover:bg-[#342c5a] transition-colors"
+                >
+                  Descargar CV
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section (Chips) */}
+      <section className="w-full px-4 py-8 max-w-240" id="skills">
+        <p className="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider mb-6 text-center md:text-left pl-2">
+          Tecnologías & Herramientas
+        </p>
+        <div className="flex flex-wrap justify-center md:justify-start gap-3">
+          {sotfSkill.map((skill) => (
+            <div
+              key={skill.name}
+              className="flex h-10 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#292348] border border-slate-200 dark:border-slate-700 px-6 transition-transform hover:scale-105 cursor-default"
+            >
+              <span className="material-symbols-outlined text-[20px] text-primary">
+                {getIconForSkill(skill.name)}
+              </span>
+              <p className="text-sm font-bold">
+                {skill.name}{' '}
+                <span className="font-normal text-xs opacity-70">
+                  ({calc_years(skill.since)})
+                </span>
+              </p>
             </div>
           ))}
         </div>
-      </div>
-    ))}
+      </section>
 
-    <style jsx>{`
-      * {
-        //outline: 1px solid;
-      }
-      .container {
-        gap: 20px;
-        display: grid;
-        align-items: flex-start;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      }
+      {/* Projects Header */}
+      <section
+        className="w-full px-4 pt-20 pb-8 max-w-240 flex flex-col md:flex-row justify-between items-end gap-4 border-b border-slate-200 dark:border-slate-800 mb-8"
+        id="work"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+          Proyectos Destacados
+        </h2>
+        <a
+          className="text-primary hover:text-purple-400 font-medium flex items-center gap-1 transition-colors group"
+          href="#"
+        >
+          Ver todos
+          <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">
+            arrow_forward
+          </span>
+        </a>
+      </section>
 
-      .specific_skill {
-      }
-      .abilities {
-        display: grid;
-      }
-      ul {
-        margin: 0.4em 0;
-      }
-      .dot {
-        border-radius: 2px;
-        height: 4px;
-        width: 4px;
-        background-color: var(--foreground);
-      }
-    `}</style>
-  </div>
-);
+      {/* Projects Grid */}
+      <section className="w-full px-4 md:px-10 pb-20 max-w-300">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              category={project.category}
+              description={project.description}
+              imageUrl={project.imageUrl}
+            />
+          ))}
+        </div>
+      </section>
+    </Layout>
+  );
+}

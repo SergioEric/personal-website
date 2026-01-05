@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
-import '../styles/normalize.css';
 import '../styles/global.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {

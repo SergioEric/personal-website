@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/container-queries";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --color-primary: #3713ec;
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #131022;
+  --color-card-dark: #1c192e;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Noto Sans", sans-serif;
+
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+}
 html,
 body {
   padding: 0;
