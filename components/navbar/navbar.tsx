@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-// import { useTheme } from 'next-themes';
+import { useTheme } from 'next-themes';
 
 const NavBar = () => {
-  // const { theme, systemTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // const currentTheme = theme === 'system' ? systemTheme : theme;
-  // const logo_path = currentTheme === 'light' ? '/devef_black.webp' : '/devef_white.webp';
-  const logo_path = '/devef_white.webp';
+  const logo_path = resolvedTheme === 'light' ? '/devef_black.webp' : '/devef_white.webp';
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 py-3">
@@ -45,12 +43,12 @@ const NavBar = () => {
             >
               Habilidades
             </a>
-            <a
+            <Link
               className="text-sm font-medium hover:text-primary transition-colors"
-              href="#about"
+              href="/me"
             >
-              Sobre mí
-            </a>
+              About Me
+            </Link>
           </nav>
           <div className="flex items-center gap-4">
             <Link href="/contact-me">
@@ -58,7 +56,7 @@ const NavBar = () => {
                 <span className="truncate">Contactar</span>
               </button>
             </Link>
-            <button className="md:hidden text-white">
+            <button className="md:hidden text-dark dark:text-white">
               <span className="material-symbols-outlined">menu</span>
             </button>
           </div>
