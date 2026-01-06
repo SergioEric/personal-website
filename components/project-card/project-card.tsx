@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
           <a
             href={link}
-            className="bg-slate-100 dark:bg-[#292348] rounded-full p-2 text-slate-900 dark:text-white group-hover:bg-primary group-hover:text-white transition-colors"
+            className="bg-slate-100 dark:bg-[#292348] grid rounded-full p-2 text-slate-900 dark:text-white group-hover:bg-primary group-hover:text-white transition-colors"
           >
             <span className="material-symbols-outlined text-sm block">
               arrow_outward

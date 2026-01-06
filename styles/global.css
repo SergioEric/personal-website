@@ -22,8 +22,8 @@ body {
   margin: 0;
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: var(--background);
-  color: var(--foreground);
+  /* background-color: var(--background); */
+  /* color: var(--foreground); */
   font-size: 16px;
   position: relative;
   z-index: 0;
@@ -59,35 +59,6 @@ body {
 }
 a {
   text-decoration: none;
-}
-
-a:visited {
-  color: inherit;
-}
-
-.flex {
-  display: flex;
-}
-
-.col {
-  flex-direction: column;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-}
-
-.center-y {
-  align-items: center;
-}
-
-.center-x {
-  justify-content: center;
-}
-
-.row {
-  flex-direction: row;
 }
 
 .navbar__container {
