@@ -86,7 +86,7 @@ const NavBar = () => {
         {/* Mobile Menu */}
         <div className="md:hidden">
           {isMenuOpen && (
-            <AnimatedNav style={menuSpring} className="flex flex-col items-center justify-center gap-10 flex-1">
+            <AnimatedNav style={menuSpring} className="flex flex-col items-center justify-center gap-10 flex-1 mt-10">
               <a
                 className="text-2xl font-semibold hover:text-primary transition-colors"
                 href="#work"

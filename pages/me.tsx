@@ -9,7 +9,7 @@ const AboutMePage = () => {
       <Head>
         <title>About me</title>
       </Head>
-      <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300 min-h-screen flex flex-col">
+      <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300 flex flex-col">
         <NavBar />
         <main className='max-w-210 mx-auto my-20 pt-7.5 px-5 min-h-[calc(100svh-243px)] text-slate-600 dark:text-slate-400 text-sm'>
           {AboutMe_CV.map((me, index) => (

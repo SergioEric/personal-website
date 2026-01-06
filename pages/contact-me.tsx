@@ -8,9 +8,9 @@ const ContactMePage = () => {
       <Head>
         <title>Contact me</title>
       </Head>
-      <div>
+      <div className="bg-background-light dark:bg-background-dark font-display transition-colors duration-300 flex flex-col">
         <NavBar />
-        <main className='mt-20 pt-7.5 px-5 min-h-[calc(100svh-243px)] max-w-240 mx-auto'>
+        <main className='mt-20 pt-7.5 px-5 min-h-[calc(100svh-243px)] max-w-240 w-full mx-auto text-slate-600 dark:text-slate-400'>
           <div className="grid items-center gap-2 grid-cols-[max-content_1fr] mb-4">
             <svg
               width="24"
@@ -164,10 +164,6 @@ const ContactMePage = () => {
 
       <style jsx>{`
 
-        main h1 {
-          color: #54a4b6;
-          font-size: 1.125rem;
-        }
 
         .item {
           gap: 0.5rem;
