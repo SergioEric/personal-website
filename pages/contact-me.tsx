@@ -156,7 +156,7 @@ const ContactMePage = () => {
               />
             </svg>
 
-            <span>{new Date().getFullYear() - 1996} years</span>
+            <span>{years()} years old</span>
           </div>
         </main>
         <Footer />
@@ -176,5 +176,18 @@ const ContactMePage = () => {
     </>
   );
 };
+
+const years = () => {
+  const bornAt = new Date(1996, 10, 9);
+  const now = new Date();
+
+  const yearsDifference = now.getFullYear() - bornAt.getFullYear();
+  const monthsDifference = now.getMonth() - bornAt.getMonth();
+  const daysDifference = now.getDate() - bornAt.getDate();
+  if (monthsDifference < 0 || (monthsDifference === 0 && daysDifference < 0)) {
+    return yearsDifference - 1;
+  }
+  return yearsDifference;
+}
 
 export default ContactMePage;
