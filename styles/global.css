@@ -61,35 +61,6 @@ a {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
-}
-
-.flex {
-  display: flex;
-}
-
-.col {
-  flex-direction: column;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-}
-
-.center-y {
-  align-items: center;
-}
-
-.center-x {
-  justify-content: center;
-}
-
-.row {
-  flex-direction: row;
-}
-
 .navbar__container {
   justify-content: space-around;
   max-width: 1280px;

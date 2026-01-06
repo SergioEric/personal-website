@@ -14,7 +14,7 @@ const NavBar = () => {
   const AnimatedNav = animated.nav as any;
 
   const springProps = useSpring({
-    height: isMenuOpen ? '400px' : '73px',
+    height: isMenuOpen ? '400px' : '66px',
     borderRadius: isMenuOpen ? '2.5rem' : '3rem',
     paddingTop: isMenuOpen ? '24px' : '12px',
     paddingBottom: isMenuOpen ? '24px' : '12px',
@@ -74,7 +74,7 @@ const NavBar = () => {
               </button>
             </Link>
             <button
-              className="xs:grid sm:grid md:hidden lg:hidden text-dark dark:text-white items-center justify-center bg-white/10 dark:bg-white/5 rounded-lg p-2 hover:bg-white/20 transition-colors"
+              className="flex md:hidden text-dark dark:text-white items-center justify-center bg-white/10 dark:bg-white/5 rounded-lg p-2 hover:bg-white/20 transition-colors"
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
