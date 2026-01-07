@@ -64,7 +64,7 @@ const NavBar = () => {
               Habilidades
             </a>
             <Link className="text-sm font-medium hover:text-primary transition-colors" href="/me">
-              About Me
+              Career
             </Link>
           </nav>
           <div className="flex items-center gap-4">
@@ -106,7 +106,7 @@ const NavBar = () => {
                 href="/me"
                 onClick={() => setIsMenuOpen(false)}
               >
-                About Me
+                Career
               </Link>
             </AnimatedNav>
           )}

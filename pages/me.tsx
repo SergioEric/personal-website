@@ -4,10 +4,50 @@ import AboutMe_CV from '@data/cv';
 import Head from 'next/head';
 
 const AboutMePage = () => {
+  const renderFormattedText = (text: string) => {
+    // Regex to match URLs starting with http or https, excluding trailing punctuation
+    const urlRegex = /(https?:\/\/[^\s\)\],]+)/g;
+    // Regex to match date patterns at the start of the string (e.g., "May 2021", "2018 - 2020")
+    // It looks for 4 digits (year) and matches until the first colon or end of line.
+    const dateRegex = /^([^:]+\d{4}[^:]*(?::|$))/;
+    const dateMatch = text.match(dateRegex);
+
+    let prefix = '';
+    let body = text;
+
+    if (dateMatch) {
+      prefix = dateMatch[0];
+      body = text.substring(dateMatch[0].length);
+    }
+
+    const parts = body.split(urlRegex);
+
+    return (
+      <>
+        {prefix && <strong>{prefix}</strong>}
+        {parts.map((part, i) =>
+          part.match(urlRegex) ? (
+            <a
+              key={i}
+              href={part}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#54a4b6] hover:underline transition-all"
+            >
+              {part}
+            </a>
+          ) : (
+            part
+          )
+        )}
+      </>
+    );
+  };
+
   return (
     <>
       <Head>
-        <title>About me</title>
+        <title>Career</title>
       </Head>
       <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300 flex flex-col">
         <NavBar />
@@ -18,11 +58,11 @@ const AboutMePage = () => {
               <ul className='list-disc pl-5 space-y-2'>
                 {me.items.map((item, items_key) => (
                   <li key={items_key}>
-                    {item.content}
+                    {renderFormattedText(item.content)}
                     {item.sub_items.length > 0 && (
                       <ul className='list-disc pl-5 mt-2 space-y-1'>
                         {item.sub_items.map((sub_item, sub_item_index) => (
-                          <li key={sub_item_index * -1}>{sub_item}</li>
+                          <li key={sub_item_index * -1}>{renderFormattedText(sub_item)}</li>
                         ))}
                       </ul>
                     )}
