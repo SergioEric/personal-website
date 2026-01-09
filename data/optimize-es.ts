@@ -27,7 +27,7 @@ const AboutMe_CV_ES = [
     topic: 'Experiencia de Trabajo',
     items: [
       {
-        content: 'May 2021 – March 2022: Keller Offers — UI/UX Designer & Frontend Developer',
+        content: 'Mayo 2021 – Marzo 2022: Keller Offers — UI/UX Designer & Frontend Developer',
         sub_items: [
           'Diseñé y prototipé vistas y componentes reutilizables en Figma, participando activamente en ciclos de feedback con stakeholders.',
           'Documenté flujos de usuario y decisiones de UX para facilitar la comunicación entre diseño y desarrollo.',
@@ -37,7 +37,7 @@ const AboutMe_CV_ES = [
       },
       {
         content:
-          'April 2022 – July 2022 / January 2023 – April 2023: Customela — Frontend Developer',
+          'Abril 2022 – Julio 2022 / Enero 2023 – Abril 2023: Customela — Frontend Developer',
         sub_items: [
           'Construí la arquitectura base del frontend, incluyendo layouts, componentes base y sistema de theming (light/dark).',
           'Implementé la lógica que integra el editor WYSIWYG de contratos con el flujo interno de creación de cláusulas, variables y modelos versionados.',
@@ -46,7 +46,7 @@ const AboutMe_CV_ES = [
         ],
       },
       {
-        content: 'July 2022 – September 2022: RXR — Frontend Developer',
+        content: 'Julio 2022 – Septiembre 2022: RXR — Frontend Developer',
         sub_items: [
           'Desarrollé desde cero TaskBank - front-end, un portal interno para la gestión de flujos de trabajo utilizado por más de 100 usuarios activos.',
           'Construí interfaces complejas usando Next.js, React, MUI y Formik, integradas con un backend en Node.js, PostgreSQL y AWS Cognito.',
@@ -56,7 +56,7 @@ const AboutMe_CV_ES = [
       },
       {
         content:
-          'September 2023 – February 2024 / September 2025 – October 2025: MobiliHD — Frontend Developer',
+          'Septiembre 2023 – Febrero 2024 / Septiembre 2025 – Octubre 2025: MobiliHD — Frontend Developer',
         sub_items: [
           'Desarrollé un MVP interno para la gestión de casos y tareas en una inmobiliaria con menos de 100 usuarios.',
           'Implementé una vista Kanban con drag & drop, sincronizando cambios de estado con backend y aplicando Optimistic UI.',
@@ -66,7 +66,7 @@ const AboutMe_CV_ES = [
         ],
       },
       {
-        content: 'October 2024 – May 2025: JDI — Frontend Engineer',
+        content: 'Octubre 2024 – Mayo 2025: JDI — Frontend Engineer',
         sub_items: [
           'Desarrollé dashboards interactivos para visualización de KPIs comerciales usados por aproximadamente 229 usuarios.',
           'Construí componentes financieros, tablas y gráficas siguiendo lineamientos estrictos de diseño.',
@@ -76,7 +76,7 @@ const AboutMe_CV_ES = [
         ],
       },
       {
-        content: 'June 2025 – August 2025: Legacy Architects — Frontend / Backend Developer',
+        content: 'Junio 2025 – Agosto 2025: Legacy Architects — Frontend / Backend Developer',
         sub_items: [
           'Ayudé a estabilizar una plataforma con cientos de usuarios activos afectada por problemas severos de timeouts.',
           'Realicé pruebas de estrés y ayude a optimizar el pooling de conexiones a base de datos, resolviendo fallos críticos de rendimiento.',
