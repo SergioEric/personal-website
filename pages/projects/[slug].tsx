@@ -75,10 +75,10 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               </div>
 
               <div className={cn("shrink-0", project.webSite == null ? 'hidden' : '')}>
-                <button className="flex items-center gap-2 rounded-full bg-primary text-white text-base font-bold px-8 py-4 hover:bg-primary/90 transition-all shadow-xl shadow-primary/30 w-full md:w-auto justify-center">
+                <a href={project.webSite ?? ''} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-full bg-primary text-white text-base font-bold px-8 py-4 hover:bg-primary/90 transition-all shadow-xl shadow-primary/30 w-full md:w-auto justify-center">
                   <span>View project</span>
                   <span className="material-symbols-outlined text-lg">open_in_new</span>
-                </button>
+                </a>
               </div>
             </div>
 

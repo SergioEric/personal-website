@@ -22,6 +22,7 @@ const getIconForSkill = (name: string) => {
 const projects = [
   {
     title: 'Customela',
+    link: '/projects/customela-automation',
     category: 'React · MUI · Redux · PostgreSQL · WYSIWYG',
     description:
       'Contract management platform with a WYSIWYG editor, dynamic variables, and versioned templates for creating and maintaining legal documents.',
@@ -39,6 +40,7 @@ const projects = [
   },
   {
     title: 'MobiliHD',
+    link: '/projects/mobilihd-case-management',
     category: 'React · React Query · MUI · Laravel · MySQL',
     description:
       'Internal case and task management system featuring Kanban workflows, optimistic UI, and real-time state synchronization for a real estate agency.',
@@ -47,6 +49,7 @@ const projects = [
   },
   {
     title: 'JDI',
+    link: '/projects/jdi-performance-kpi',
     category: 'React · MUI · Dashboards · Data Visualization',
     description:
       'KPI dashboard platform for car dealerships, featuring advanced data visualization, financial components, and competitive performance tracking between branches.',

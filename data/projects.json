@@ -72,9 +72,232 @@
       }
     ],
     "nextProject": {
-      "title": "E-Commerce App",
-      "slug": "e-commerce-app",
+      "title": "MobiliHD — Case Management Platform",
+      "slug": "mobilihd-case-management",
       "image": ""
+    }
+  },
+  {
+    "slug": "mobilihd-case-management",
+    "title": "MobiliHD — Case Management Platform",
+    "subtitle": "Internal case and task management system built for a real estate company to track operations, workflows, and case lifecycle efficiently.",
+    "webSite": null,
+    "techStack": [
+      {
+        "name": "React",
+        "color": "#61dafb"
+      },
+      {
+        "name": "React Router",
+        "color": "#f44250"
+      },
+      {
+        "name": "React Query",
+        "color": "#ff4154"
+      },
+      {
+        "name": "MUI",
+        "color": "#007fff"
+      },
+      {
+        "name": "Laravel",
+        "color": "#ff2d20"
+      },
+      {
+        "name": "MySQL",
+        "color": "#4479a1"
+      },
+      {
+        "name": "AWS S3",
+        "color": "#569a31"
+      },
+      {
+        "name": "AWS SES",
+        "color": "#dd344c"
+      }
+    ],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCsafQP4LUUxorknnqAEmid-V7_XhFtXM0N6IvbZsC_2YwJugFv9T0E4IenavIqA2U1_mzKvJoGZH1Q684f-k2KPDw2s0cJEFeBGmU8oU3OtUFRrl7Eos0se1bBhoNmRpKnIN1vNFqTBqita4kGDPgMOZcm6nx_-yG5oB5G8TY8pvVTF1g6DXSgtLhYcmumQpr5So8TOXcDUV6oxVdQXbWwS-pdWT05KLi0ygIa6dv0W25oVqhFaWR3MmP54uyhV-oKbLdvnWXlj4o",
+    "repoUrl": null,
+    "details": {
+      "role": "Frontend Developer",
+      "timeline": "5 months (MVP + V2 refactor)",
+      "client": "MobiliHD (real estate company)",
+      "year": "2023 – 2025"
+    },
+    "description": "MobiliHD is an internal platform designed to manage cases and operational tasks within a real estate company. The system centralizes case tracking, status changes, and team workflows, replacing manual processes with a visual and data-driven interface. I was responsible for building the frontend MVP and later leading a full redesign and refactor to improve usability, maintainability, and development speed.",
+    "challenges": [
+      {
+        "description": "Designing a scalable case management UI that could handle large datasets while maintaining performance."
+      },
+      {
+        "description": "Keeping UI state consistent while synchronizing paginated data and real-time status updates with the backend."
+      },
+      {
+        "description": "Refactoring a production system without disrupting daily operations or existing user workflows."
+      }
+    ],
+    "achievements": [
+      {
+        "description": "Delivered a production-ready MVP used internally by a real estate team of fewer than 100 users."
+      },
+      {
+        "description": "Improved frontend maintainability and iteration speed through a structured refactor and clearer state management."
+      },
+      {
+        "description": "Reduced development time significantly in the second version by leveraging AI-assisted workflows during refactoring."
+      }
+    ],
+    "gallery": [],
+    "nextProject": {
+      "title": "Customela — Contract Automation Platform",
+      "slug": "customela-automation",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC0WN6rbUvTaeLM8ZGNUZp3rm79cV4xZ3hYrnOS9CZ34NjITynfbTZu45FimetEU_o7FqzKZxa8HasyS4yCKPZGCIf5Cyh5uQLn6fAD85ztdRs_RCwU45-DkuOxdo-EYo2Q2HuTPkDL58P5xkmrhZKQhn7pZRYnYhxWFJIA-y0xDzp7ey2q2USQIN0Y7o8fVHyxryt-Zj2UZ-c9mZa-E_n4L-VplnovP7kg8oP8dI1tHy3-OgbYUv2N1_IkuS6HNBYJNvPltmqZ2Us"
+    }
+  },
+  {
+    "slug": "customela-automation",
+    "title": "Customela — Contract Automation Platform",
+    "subtitle": "Web-based contract automation platform that allows users to create, manage, and version dynamic legal documents through a WYSIWYG editor.",
+    "webSite": "https://customela.com",
+    "techStack": [
+      {
+        "name": "React",
+        "color": "#61dafb"
+      },
+      {
+        "name": "MUI",
+        "color": "#007fff"
+      },
+      {
+        "name": "Formik",
+        "color": "#243972"
+      },
+      {
+        "name": "Redux",
+        "color": "#764abc"
+      },
+      {
+        "name": "Laravel",
+        "color": "#ff2d20"
+      },
+      {
+        "name": "PostgreSQL",
+        "color": "#336791"
+      },
+      {
+        "name": "AWS S3",
+        "color": "#569a31"
+      },
+      {
+        "name": "AWS SES",
+        "color": "#dd344c"
+      }
+    ],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC0WN6rbUvTaeLM8ZGNUZp3rm79cV4xZ3hYrnOS9CZ34NjITynfbTZu45FimetEU_o7FqzKZxa8HasyS4yCKPZGCIf5Cyh5uQLn6fAD85ztdRs_RCwU45-DkuOxdo-EYo2Q2HuTPkDL58P5xkmrhZKQhn7pZRYnYhxWFJIA-y0xDzp7ey2q2USQIN0Y7o8fVHyxryt-Zj2UZ-c9mZa-E_n4L-VplnovP7kg8oP8dI1tHy3-OgbYUv2N1_IkuS6HNBYJNvPltmqZ2Us",
+    "repoUrl": null,
+    "details": {
+      "role": "Frontend Developer",
+      "timeline": "7 months (two engagement periods)",
+      "client": "Customela",
+      "year": "2022 – 2023"
+    },
+    "description": "Customela is a SaaS platform focused on automating contract creation using dynamic templates. Users can define variables, clauses, and structured objects inside a WYSIWYG editor, enabling reusable and versioned contract models. I was responsible for designing and implementing the frontend architecture and integrating complex editor logic with backend systems.",
+    "challenges": [
+      {
+        "description": "Integrating a WYSIWYG editor with a dynamic data model for variables, clauses, and nested objects."
+      },
+      {
+        "description": "Supporting versioned contract templates while maintaining backward compatibility."
+      },
+      {
+        "description": "Ensuring predictable editor behavior when inserting, updating, or removing dynamic placeholders."
+      }
+    ],
+    "achievements": [
+      {
+        "description": "Built the foundational frontend architecture, including layouts, base components, and theming (light/dark)."
+      },
+      {
+        "description": "Implemented reliable mechanisms for reading, writing, and updating dynamic contract variables."
+      },
+      {
+        "description": "Enabled versioned contract models without breaking existing documents or user workflows."
+      }
+    ],
+    "gallery": [],
+    "nextProject": {
+      "title": "JDI — Sales Performance & KPI Platform",
+      "slug": "jdi-performance-kpi",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9NylJssFPXk1dJhnlSXGkyaJLzGvXgUXwCj4AIxxCQEe66AfkDRxT89F365Uj6_u9wdKC6wGGJGwZhnUTUaHS4C-7cxEOpBawtPenElEgHKRCvY3xkD53YmcgL1A7dD-9ogeQMT0NVz-3yJUd-FXludwX8wXnNTBFZXy7rHqZYBhcv7uBmX5YS7zEuVYMkaS6_JyeLlMiaMSQuWnzKXGyVWv5fiOLpy3o3-SWaIaeEXFAKJz5YlcmB4JMDzCEAV23R60ZDEPGDTE"
+    }
+  },
+  {
+    "slug": "jdi-performance-kpi",
+    "title": "JDI — Sales Performance & KPI Platform",
+    "subtitle": "Internal platform for tracking sales performance, KPIs, and competitions across multiple automotive branches and dealer groups.",
+    "webSite": "https://www.ez-wins.net",
+    "techStack": [
+      {
+        "name": "React",
+        "color": "#61dafb"
+      },
+      {
+        "name": "MUI",
+        "color": "#007fff"
+      },
+      {
+        "name": "Jotai",
+        "color": "#ffffff"
+      },
+      {
+        "name": "Laravel",
+        "color": "#ff2d20"
+      },
+      {
+        "name": "Blade",
+        "color": "#ff2d20"
+      },
+      {
+        "name": "MySQL",
+        "color": "#4479a1"
+      }
+    ],
+    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9NylJssFPXk1dJhnlSXGkyaJLzGvXgUXwCj4AIxxCQEe66AfkDRxT89F365Uj6_u9wdKC6wGGJGwZhnUTUaHS4C-7cxEOpBawtPenElEgHKRCvY3xkD53YmcgL1A7dD-9ogeQMT0NVz-3yJUd-FXludwX8wXnNTBFZXy7rHqZYBhcv7uBmX5YS7zEuVYMkaS6_JyeLlMiaMSQuWnzKXGyVWv5fiOLpy3o3-SWaIaeEXFAKJz5YlcmB4JMDzCEAV23R60ZDEPGDTE",
+    "repoUrl": null,
+    "details": {
+      "role": "Frontend Engineer",
+      "timeline": "7 months",
+      "client": "JDI",
+      "year": "2024 – 2025"
+    },
+    "description": "JDI is a business intelligence platform used by automotive dealerships to monitor sales KPIs, advisors’ performance, and branch-level metrics. The system supports multiple branches, grouped entities, and competitive rankings between teams. I worked primarily on the frontend, building complex dashboards and multi-step workflows inside a Laravel monolith.",
+    "challenges": [
+      {
+        "description": "Managing complex, interdependent state across multi-step creation flows."
+      },
+      {
+        "description": "Preventing unnecessary re-renders in highly dynamic dashboards."
+      },
+      {
+        "description": "Maintaining frontend scalability while integrating React into a legacy Blade-based monolith."
+      }
+    ],
+    "achievements": [
+      {
+        "description": "Built interactive KPI dashboards used by approximately 229 active users."
+      },
+      {
+        "description": "Designed multi-step flows for creating and managing groups and competitions with clear logical dependencies."
+      },
+      {
+        "description": "Reduced rendering overhead by isolating state into atomic units, improving performance and maintainability."
+      }
+    ],
+    "gallery": [],
+    "nextProject": {
+      "title": "RXR — TaskBank",
+      "slug": "rxr-task-bank",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3eXkhA3Am7JMeGgUqKQMt9Jxw0kRdy7aBegKtM4djqffHHS0Qyua2c7Pc8wOvbijnUgrb89WC6GgvRDp5-HXsdm-6d92SmOhpq-2Lybly_WMB7_C-hPOEFpnnIuVkFo5UwfM-k9ViePiksFOqeQdWd2-jeFfzjOsSKg82r0Xk1JbgrWqjpUc4ntxKWxqX25QMIwTBTVGA9uZU9Rikuy3aNddK60ljcuKcTtxtWXzXxuO0P2xDqA1EIhZt2UrvKRTq3nAGupLaOBI"
     }
   }
 ]
