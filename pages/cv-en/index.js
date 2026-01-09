@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function CV() {
   return (
-    <div className="container">
+    <div className="max-w-full">
       <Head>
         <title>CV-EN Devef</title>
         <link rel="icon" href="/favicon.ico" />
@@ -13,8 +13,7 @@ export default function CV() {
       </Head>
 
       <main className="flex">
-        TODO
-        {/* <div
+        <div
           style={{
             width: '100%',
             height: '100vh',
@@ -24,12 +23,12 @@ export default function CV() {
           }}
         >
           <iframe
-            src={`CV-ES.pdf`}
-            title="CV-EN Sergio Morales"
+            src={`Career-EN.pdf`}
+            title="Career Sergio Morales"
             style={{ width: '100%', height: '100%' }}
             frameBorder="0"
           />
-        </div> */}
+        </div>
       </main>
     </div>
   );

@@ -9,7 +9,7 @@ export default function CV() {
   // const showPdfControls = viewControls ? "toolbar=0&navpanes=0&scrollbar=0" : "";
   //#toolbar=0&navpanes=0&scrollbar=0
   return (
-    <div className="container">
+    <div className="max-w-full">
       <Head>
         <title>CV-ES Devef</title>
         <link rel="icon" href="/favicon.ico" />
@@ -30,8 +30,8 @@ export default function CV() {
           }}
         >
           <iframe
-            src={`CV-ES.pdf`}
-            title="CV-ES Sergio Morales"
+            src={`Career-ES.pdf`}
+            title="Carrera - Sergio Morales"
             style={{ width: '100%', height: '100%' }}
             frameBorder="0"
           />
