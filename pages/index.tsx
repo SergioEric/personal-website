@@ -36,7 +36,7 @@ const projects = [
     description:
       'Internal task and workflow management platform with complex creation flows, recurring tasks, and notifications for multiple departments.',
     imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuATyfBXZm-JGm7wpHhI_aoUz_Et9xaTpgYmxXCCygo572BP6o1Mm5VJ24SsPuiyuZvpfLcXo3UTa4UyuPd8CIEWOyvICSk9XFlKtN_H6C3Zsa5N3E6gbmktC-jDfsMVc5m-R-fW4TSvLm2PAemzKQy5JwxTQLb7XY3dmL9Ea86SI9PyEEuqZZwV0_Ikla5wqin6-G9SEHP1f6VFoidmOA5A_88hSRh36vNpFS4nBAFq0BZlT85iZZDrJDjZUdaYeSXLYKDklGpAD4Y',
+      'https://assets.devef.com/projects/rxr/rxr-dashboard.webp',
   },
   {
     title: 'MobiliHD',

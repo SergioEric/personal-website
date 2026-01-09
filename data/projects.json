@@ -30,7 +30,7 @@
         "color": "#ffffff"
       }
     ],
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3eXkhA3Am7JMeGgUqKQMt9Jxw0kRdy7aBegKtM4djqffHHS0Qyua2c7Pc8wOvbijnUgrb89WC6GgvRDp5-HXsdm-6d92SmOhpq-2Lybly_WMB7_C-hPOEFpnnIuVkFo5UwfM-k9ViePiksFOqeQdWd2-jeFfzjOsSKg82r0Xk1JbgrWqjpUc4ntxKWxqX25QMIwTBTVGA9uZU9Rikuy3aNddK60ljcuKcTtxtWXzXxuO0P2xDqA1EIhZt2UrvKRTq3nAGupLaOBI",
+    "image": "https://assets.devef.com/projects/rxr/rxr-dashboard.webp",
     "repoUrl": null,
     "details": {
       "role": "Frontend Engineer",
@@ -63,12 +63,24 @@
     ],
     "gallery": [
       {
-        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuDHtqiqlLbHTABxVodr9GIGg_7NWGqEBLHaVVTmtgxyS0-3K_ska3o6_d_eNMZsNa0bgAZw76cSzte0A-PP_O98iyrhhFgLS-LM-uPlM_ra1OfXmULjEksuTDDvF-FnpZh1KfRrl0UoRhrE0UfDeu-qhUx1V8-StDHdmzDv-fvBZ-OhYdZTrFFpbtAgmghxEmf53bhIiYUw1K3V2CuHuHzFqkDrXJsyUGJk2J-Ek4kXM6W6ZL9ROCTrdadX031znzw8_6R4lXwiehI",
-        "alt": "Todo"
+        "url": "https://assets.devef.com/projects/rxr/rxr-dashboard.webp",
+        "alt": "RXR main dashboard"
       },
       {
-        "url": "https://lh3.googleusercontent.com/aida-public/AB6AXuCvEInsboUUrZkXE7A0p8gLCdIoOsJfTTvGk8lNMf7aEQsB1s3I6IvKr8Tq3YqdIbjdCgLpiOLcZg0m1jgQgM-1f-GwXHGRlc-2B2Qurqht64PcaTkvwYzd8BXW_z3uWk1f3JvwFkMLiDXLWem_E-JuMcioUjXPbzUjd2ZB6zL5o2p0dIWbDECt3RWdVrVMK0E06Ik98WWL4joxmSQm81STYoOQvLubINJvMgbn9CM-AN3W0HuXhvjxMb5tuO4427xV6VK_xckEJo4",
-        "alt": "Todo"
+        "url": "https://assets.devef.com/projects/rxr/rxr-team-dashboard.webp",
+        "alt": "RXR team dashboard"
+      },
+      {
+        "url": "https://assets.devef.com/projects/rxr/rxr-open-task-1.webp",
+        "alt": "RXR Open task"
+      },
+      {
+        "url": "https://assets.devef.com/projects/rxr/rxr-task-drag-drop-clone-task.webp",
+        "alt": "RXR Open task - drag and drop - clone task"
+      },
+      {
+        "url": "https://assets.devef.com/projects/rxr/rxr-history-recurrences.webp",
+        "alt": "RXR Open task - history and recurrences"
       }
     ],
     "nextProject": {
