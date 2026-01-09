@@ -5,7 +5,7 @@ const AboutMe_CV_EN = [
       {
         content: 'Full-Stack Engineer (Frontend-focused) · Colombia · Remote',
         sub_items: [
-          'Email · sericmorales@gmail.com',
+          'Contact · sericmorales@gmail.com · +57 3046797488',
           'LinkedIn · https://www.linkedin.com/in/sergio-eric',
           'GitHub · https://github.com/devef-com',
           'Portfolio · https://devef.com/',

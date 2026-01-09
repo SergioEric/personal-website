@@ -3,9 +3,9 @@ const AboutMe_CV_ES = [
     topic: 'Sergio Morales',
     items: [
       {
-        content: 'Full-Stack Engineer (Frontend-focused) · Colombia · Remote',
+        content: 'Full-Stack Engineer (Frontend-focused) · Colombia · Remoto',
         sub_items: [
-          'Email · sericmorales@gmail.com',
+          'Contacto · sericmorales@gmail.com · +57 3046797488',
           'LinkedIn · https://www.linkedin.com/in/sergio-eric',
           'GitHub · https://github.com/devef-com',
           'Portafolio · https://devef.com/',
