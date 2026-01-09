@@ -1,9 +1,15 @@
 import Footer from '@components/footer/footer';
 import NavBar from '@components/navbar/navbar';
-import AboutMe_CV from '@data/cv';
+import AboutMe_CV_EN from '@data/optimize-en';
+import AboutMe_CV_ES from '@data/optimize-es';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const AboutMePage = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const AboutMe_CV = locale === 'es' ? AboutMe_CV_ES : AboutMe_CV_EN;
+
   const renderFormattedText = (text: string) => {
     // Regex to match URLs starting with http or https, excluding trailing punctuation
     const urlRegex = /(https?:\/\/[^\s\)\],]+)/g;
