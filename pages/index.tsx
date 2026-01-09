@@ -30,6 +30,7 @@ const projects = [
   },
   {
     title: 'RXR — TaskBank',
+    link: '/projects/rxr-task-bank',
     category: 'Next.js · React · Cognito · MUI',
     description:
       'Internal task and workflow management platform with complex creation flows, recurring tasks, and notifications for multiple departments.',
@@ -162,6 +163,7 @@ export default function Home() {
               category={project.category}
               description={project.description}
               imageUrl={project.imageUrl}
+              link={project.link}
             />
           ))}
         </div>

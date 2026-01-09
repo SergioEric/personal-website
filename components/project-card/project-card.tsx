@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface ProjectCardProps {
@@ -34,14 +35,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {category}
             </p>
           </div>
-          <a
+          <Link
             href={link}
             className="bg-slate-100 dark:bg-[#292348] grid rounded-full p-2 text-slate-900 dark:text-white group-hover:bg-primary group-hover:text-white transition-colors"
           >
             <span className="material-symbols-outlined text-sm block">
               arrow_outward
             </span>
-          </a>
+          </Link>
         </div>
         <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mt-2 line-clamp-2">
           {description}
