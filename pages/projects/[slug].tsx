@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '@components/layout/layout';
 import projectsData from '@data/projects.json';
+import { cn } from '@lib/utils';
 
 // Type definitions based on JSON
 interface Project {
@@ -72,9 +73,9 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                 </div>
               </div>
 
-              <div className="shrink-0">
+              <div className={cn("shrink-0", project.webSite == null ? 'hidden' : '')}>
                 <button className="flex items-center gap-2 rounded-full bg-primary text-white text-base font-bold px-8 py-4 hover:bg-primary/90 transition-all shadow-xl shadow-primary/30 w-full md:w-auto justify-center">
-                  <span>Ver Proyecto en Vivo</span>
+                  <span>View project</span>
                   <span className="material-symbols-outlined text-lg">open_in_new</span>
                 </button>
               </div>
