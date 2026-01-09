@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '@components/layout/layout';
+import Gallery from '@components/gallery/gallery';
 import projectsData from '@data/projects.json';
 import { cn } from '@lib/utils';
 
@@ -49,7 +50,7 @@ export default function ProjectPage({ project }: ProjectPageProps) {
             {/* Breadcrumbs/Back */}
             <Link href="/" className="inline-flex items-center text-sm text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors gap-1 w-fit group">
               <span className="material-symbols-outlined text-lg transition-transform group-hover:-translate-x-1">arrow_back</span>
-              Volver a Proyectos
+              Back to Home
             </Link>
 
             {/* Title Area */}
@@ -81,21 +82,9 @@ export default function ProjectPage({ project }: ProjectPageProps) {
               </div>
             </div>
 
-            {/* Main Project Image */}
-            <div className="w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-2xl bg-surface-dark relative mt-8 group">
-              <div className="absolute inset-0 bg-linear-to-t from-background-dark/80 to-transparent opacity-60 z-10"></div>
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                style={{ backgroundImage: `url("${project.image}")` }}
-              >
-              </div>
-              {/* Overlay Info */}
-              <div className="absolute bottom-6 left-6 z-20 hidden md:block">
-                <div className="flex items-center gap-2 bg-black/50 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10">
-                  <span className="material-symbols-outlined text-white text-sm">photo_camera</span>
-                  <span className="text-white text-xs font-medium">Dashboard - Vista Principal</span>
-                </div>
-              </div>
+            {/* Main Project Image - Carousel */}
+            <div className="mt-8">
+              <Gallery images={project.gallery} />
             </div>
           </div>
         </div>
@@ -189,24 +178,6 @@ export default function ProjectPage({ project }: ProjectPageProps) {
                 </div>
               </section>
             </div>
-          </div>
-        </div>
-
-        {/* Gallery Section */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-32">
-          <h3 className="text-2xl font-bold mb-8">Galería del Proyecto</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {project.gallery.map((item, idx) => (
-              <div key={idx} className="aspect-4/3 rounded-2xl bg-surface-dark overflow-hidden relative group cursor-pointer">
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                  style={{ backgroundImage: `url("${item.url}")` }}
-                ></div>
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="material-symbols-outlined text-white text-4xl">visibility</span>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
