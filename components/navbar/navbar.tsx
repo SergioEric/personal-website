@@ -38,7 +38,7 @@ const NavBar = () => {
   const logo_path = resolvedTheme === 'light' ? '/devef_black.webp' : '/devef_white.webp';
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 py-3">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-10 py-3">
       <AnimatedDiv style={springProps} className={cn(
         "mx-auto max-w-240 bg-white/10 dark:bg-[#292348]/40 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-lg flex flex-col overflow-hidden px-6"
       )}>
@@ -112,7 +112,7 @@ const NavBar = () => {
           )}
         </div>
       </AnimatedDiv>
-    </div>
+    </nav>
   );
 };
 

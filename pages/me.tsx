@@ -1,9 +1,16 @@
 import Footer from '@components/footer/footer';
 import NavBar from '@components/navbar/navbar';
-import AboutMe_CV from '@data/cv';
+import AboutMe_CV_EN from '@data/optimize-en';
+import AboutMe_CV_ES from '@data/optimize-es';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 const AboutMePage = () => {
+  const router = useRouter();
+  const { query } = router;
+  const lang = query.lang;
+  const AboutMe_CV = lang === 'es' ? AboutMe_CV_ES : AboutMe_CV_EN;
+
   const renderFormattedText = (text: string) => {
     // Regex to match URLs starting with http or https, excluding trailing punctuation
     const urlRegex = /(https?:\/\/[^\s\)\],]+)/g;
@@ -76,7 +83,22 @@ const AboutMePage = () => {
       </div>
 
       <style jsx>{`
-
+        @media print {
+          :global(nav),
+          :global(footer) {
+            display: none !important;
+          }
+           :global(body) {
+             background-color: white !important;
+           }
+            :global(main) {
+              margin: 0 !important;
+              padding: 0 !important;
+              max-width: 100% !important;
+              -webkit-print-color-adjust: exact;
+              print-color-adjust: exact;
+            }
+        }
       `}</style>
     </>
   );
