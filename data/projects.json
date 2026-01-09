@@ -151,7 +151,7 @@
     "nextProject": {
       "title": "Customela — Contract Automation Platform",
       "slug": "customela-automation",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC0WN6rbUvTaeLM8ZGNUZp3rm79cV4xZ3hYrnOS9CZ34NjITynfbTZu45FimetEU_o7FqzKZxa8HasyS4yCKPZGCIf5Cyh5uQLn6fAD85ztdRs_RCwU45-DkuOxdo-EYo2Q2HuTPkDL58P5xkmrhZKQhn7pZRYnYhxWFJIA-y0xDzp7ey2q2USQIN0Y7o8fVHyxryt-Zj2UZ-c9mZa-E_n4L-VplnovP7kg8oP8dI1tHy3-OgbYUv2N1_IkuS6HNBYJNvPltmqZ2Us"
+      "image": "https://assets.devef.com/projects/customela/main-customela.webp"
     }
   },
   {
@@ -193,7 +193,7 @@
         "color": "#dd344c"
       }
     ],
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuC0WN6rbUvTaeLM8ZGNUZp3rm79cV4xZ3hYrnOS9CZ34NjITynfbTZu45FimetEU_o7FqzKZxa8HasyS4yCKPZGCIf5Cyh5uQLn6fAD85ztdRs_RCwU45-DkuOxdo-EYo2Q2HuTPkDL58P5xkmrhZKQhn7pZRYnYhxWFJIA-y0xDzp7ey2q2USQIN0Y7o8fVHyxryt-Zj2UZ-c9mZa-E_n4L-VplnovP7kg8oP8dI1tHy3-OgbYUv2N1_IkuS6HNBYJNvPltmqZ2Us",
+    "image": "",
     "repoUrl": null,
     "details": {
       "role": "Frontend Developer",
@@ -224,7 +224,20 @@
         "description": "Enabled versioned contract models without breaking existing documents or user workflows."
       }
     ],
-    "gallery": [],
+    "gallery": [
+      {
+      "url": "https://assets.devef.com/projects/customela/customela-editor.webp",
+      "alt": "Contract Editor"
+    },
+      {
+      "url": "https://assets.devef.com/projects/customela/customela-form.webp",
+      "alt": "Contract Filling Form"
+    },
+      {
+      "url": "https://assets.devef.com/projects/customela/main-customela.webp",
+      "alt": "First view of Customela - landing page"
+    }
+  ],
     "nextProject": {
       "title": "JDI — Sales Performance & KPI Platform",
       "slug": "jdi-performance-kpi",

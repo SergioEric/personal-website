@@ -27,7 +27,7 @@ const projects = [
     description:
       'Contract management platform with a WYSIWYG editor, dynamic variables, and versioned templates for creating and maintaining legal documents.',
     imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuC0WN6rbUvTaeLM8ZGNUZp3rm79cV4xZ3hYrnOS9CZ34NjITynfbTZu45FimetEU_o7FqzKZxa8HasyS4yCKPZGCIf5Cyh5uQLn6fAD85ztdRs_RCwU45-DkuOxdo-EYo2Q2HuTPkDL58P5xkmrhZKQhn7pZRYnYhxWFJIA-y0xDzp7ey2q2USQIN0Y7o8fVHyxryt-Zj2UZ-c9mZa-E_n4L-VplnovP7kg8oP8dI1tHy3-OgbYUv2N1_IkuS6HNBYJNvPltmqZ2Us',
+      'https://assets.devef.com/projects/customela/main-customela.webp',
   },
   {
     title: 'RXR — TaskBank',
