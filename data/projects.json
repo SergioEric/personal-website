@@ -287,7 +287,7 @@
         "color": "#4479a1"
       }
     ],
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB9NylJssFPXk1dJhnlSXGkyaJLzGvXgUXwCj4AIxxCQEe66AfkDRxT89F365Uj6_u9wdKC6wGGJGwZhnUTUaHS4C-7cxEOpBawtPenElEgHKRCvY3xkD53YmcgL1A7dD-9ogeQMT0NVz-3yJUd-FXludwX8wXnNTBFZXy7rHqZYBhcv7uBmX5YS7zEuVYMkaS6_JyeLlMiaMSQuWnzKXGyVWv5fiOLpy3o3-SWaIaeEXFAKJz5YlcmB4JMDzCEAV23R60ZDEPGDTE",
+    "image": "",
     "repoUrl": null,
     "details": {
       "role": "Frontend Engineer",
@@ -318,11 +318,32 @@
         "description": "Reduced rendering overhead by isolating state into atomic units, improving performance and maintainability."
       }
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "url":"https://assets.devef.com/projects/jdi/advisor-home.webp",
+        "alt":"Advisor Home Dashboard"
+      },
+      {
+        "url":"https://assets.devef.com/projects/jdi/dashboard-advisor.webp",
+        "alt":"Dashboard Advisor"
+      },
+      {
+        "url":"https://assets.devef.com/projects/jdi/competition-open.webp",
+        "alt":"Competition Open"
+      },
+      {
+        "url":"https://assets.devef.com/projects/jdi/create-competition-missing-step-3.webp",
+        "alt":"Create Competition Missing Step 3"
+      },
+      {
+        "url":"https://assets.devef.com/projects/jdi/create-competition-all-steps-completed.webp",
+        "alt":"Create Competition All Steps Completed"
+      }
+    ],
     "nextProject": {
       "title": "RXR — TaskBank",
       "slug": "rxr-task-bank",
-      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA3eXkhA3Am7JMeGgUqKQMt9Jxw0kRdy7aBegKtM4djqffHHS0Qyua2c7Pc8wOvbijnUgrb89WC6GgvRDp5-HXsdm-6d92SmOhpq-2Lybly_WMB7_C-hPOEFpnnIuVkFo5UwfM-k9ViePiksFOqeQdWd2-jeFfzjOsSKg82r0Xk1JbgrWqjpUc4ntxKWxqX25QMIwTBTVGA9uZU9Rikuy3aNddK60ljcuKcTtxtWXzXxuO0P2xDqA1EIhZt2UrvKRTq3nAGupLaOBI"
+      "image": "https://assets.devef.com/projects/rxr/rxr-dashboard.webp"
     }
   }
 ]

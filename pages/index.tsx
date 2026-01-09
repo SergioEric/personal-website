@@ -54,16 +54,16 @@ const projects = [
     description:
       'KPI dashboard platform for car dealerships, featuring advanced data visualization, financial components, and competitive performance tracking between branches.',
     imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuB9NylJssFPXk1dJhnlSXGkyaJLzGvXgUXwCj4AIxxCQEe66AfkDRxT89F365Uj6_u9wdKC6wGGJGwZhnUTUaHS4C-7cxEOpBawtPenElEgHKRCvY3xkD53YmcgL1A7dD-9ogeQMT0NVz-3yJUd-FXludwX8wXnNTBFZXy7rHqZYBhcv7uBmX5YS7zEuVYMkaS6_JyeLlMiaMSQuWnzKXGyVWv5fiOLpy3o3-SWaIaeEXFAKJz5YlcmB4JMDzCEAV23R60ZDEPGDTE',
+      'https://assets.devef.com/projects/jdi/competition-open.webp',
   },
-  {
-    title: 'Giway',
-    category: 'Tanstack Start • PostgreSQL • R2 • SES • Drizzle',
-    description:
-      'The complete platform for organizing raffles with number slots or simple giveaway drawings. Manage participants, track reservations, and pick winners fairly.',
-    imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuD0E8N92DhnNbF5yxjamtYT3xxra0N_BVpH9IB2UMA8Sgrqklr48tIY07rGPx2RNENpOYRKL-UhLsiqNp9By7QcuV9p_y8PnS4GYCNUsCGqN0qhwjOhLSdZlJ1uYuAPTtVaI1fSOkaIShEryQHMhcUfrVlIKBCeuAYhYJJv9kbzK-ExrYF-kLNCXl6AmdJ71icrFkfgV6OTYK8FiJ4l_pYQZguVIwDO8QYFK8LMPENJW1rPnk-9XozIGiekDszEg0Y193Alyuqnej8',
-  },
+  // {
+  //   title: 'Giway',
+  //   category: 'Tanstack Start • PostgreSQL • R2 • SES • Drizzle',
+  //   description:
+  //     'The complete platform for organizing raffles with number slots or simple giveaway drawings. Manage participants, track reservations, and pick winners fairly.',
+  //   imageUrl:
+  //     'https://lh3.googleusercontent.com/aida-public/AB6AXuD0E8N92DhnNbF5yxjamtYT3xxra0N_BVpH9IB2UMA8Sgrqklr48tIY07rGPx2RNENpOYRKL-UhLsiqNp9By7QcuV9p_y8PnS4GYCNUsCGqN0qhwjOhLSdZlJ1uYuAPTtVaI1fSOkaIShEryQHMhcUfrVlIKBCeuAYhYJJv9kbzK-ExrYF-kLNCXl6AmdJ71icrFkfgV6OTYK8FiJ4l_pYQZguVIwDO8QYFK8LMPENJW1rPnk-9XozIGiekDszEg0Y193Alyuqnej8',
+  // },
 ];
 
 export default function Home() {
@@ -146,7 +146,7 @@ export default function Home() {
           Featured Projects
         </h2>
         <a
-          className="text-primary hover:text-purple-400 font-medium flex items-center gap-1 transition-colors group"
+          className="hidden text-primary hover:text-purple-400 font-medium flex items-center gap-1 transition-colors group"
           href="#"
         >
           See all
