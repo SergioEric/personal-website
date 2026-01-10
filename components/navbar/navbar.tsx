@@ -57,12 +57,12 @@ const NavBar = () => {
             </Link>
           </div>
           <nav className="hidden md:flex items-center gap-8">
-            <a className="text-sm font-medium hover:text-primary transition-colors" href="#work">
+            {/* <a className="text-sm font-medium hover:text-primary transition-colors" href="#work">
               Proyectos
             </a>
             <a className="text-sm font-medium hover:text-primary transition-colors" href="#skills">
               Habilidades
-            </a>
+            </a> */}
             <Link className="text-sm font-medium hover:text-primary transition-colors" href="/me">
               Career
             </Link>
@@ -87,7 +87,7 @@ const NavBar = () => {
         <div className="md:hidden">
           {isMenuOpen && (
             <AnimatedNav style={menuSpring} className="flex flex-col items-center justify-center gap-10 flex-1 mt-10">
-              <a
+              {/* <a
                 className="text-2xl font-semibold hover:text-primary transition-colors"
                 href="#work"
                 onClick={() => setIsMenuOpen(false)}
@@ -100,7 +100,7 @@ const NavBar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Habilidades
-              </a>
+              </a> */}
               <Link
                 className="text-2xl font-semibold hover:text-primary transition-colors"
                 href="/me"

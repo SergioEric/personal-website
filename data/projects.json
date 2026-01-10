@@ -86,7 +86,7 @@
     "nextProject": {
       "title": "MobiliHD — Case Management Platform",
       "slug": "mobilihd-case-management",
-      "image": ""
+      "image": "https://assets.devef.com/projects/mobilihd/mobilihd-dashboard.webp"
     }
   },
   {
@@ -128,7 +128,7 @@
         "color": "#dd344c"
       }
     ],
-    "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCsafQP4LUUxorknnqAEmid-V7_XhFtXM0N6IvbZsC_2YwJugFv9T0E4IenavIqA2U1_mzKvJoGZH1Q684f-k2KPDw2s0cJEFeBGmU8oU3OtUFRrl7Eos0se1bBhoNmRpKnIN1vNFqTBqita4kGDPgMOZcm6nx_-yG5oB5G8TY8pvVTF1g6DXSgtLhYcmumQpr5So8TOXcDUV6oxVdQXbWwS-pdWT05KLi0ygIa6dv0W25oVqhFaWR3MmP54uyhV-oKbLdvnWXlj4o",
+    "image": "https://assets.devef.com/projects/mobilihd/mobilihd-dashboard.webp",
     "repoUrl": null,
     "details": {
       "role": "Frontend Developer",
@@ -159,7 +159,32 @@
         "description": "Reduced development time significantly in the second version by leveraging AI-assisted workflows during refactoring."
       }
     ],
-    "gallery": [],
+    "gallery": [
+      {
+        "url": "https://assets.devef.com/projects/mobilihd/mobilihd-dashboard.webp",
+        "alt": "MobiliHD main dashboard"
+      },
+      {
+        "url": "https://assets.devef.com/projects/mobilihd/mobilihd-cases-view.webp",
+        "alt": "MobiliHD case view"
+      },
+      {
+        "url": "https://assets.devef.com/projects/mobilihd/mobilihd-kanban-view.webp",
+        "alt": "MobiliHD kanban view"
+      },
+      {
+        "url": "https://assets.devef.com/projects/mobilihd/mobilihd-my-space.webp",
+        "alt": "MobiliHD my space"
+      },
+      {
+        "url": "https://assets.devef.com/projects/mobilihd/mobilihd-property-view.webp",
+        "alt": "MobiliHD property view"
+      },
+      {
+        "url": "https://assets.devef.com/projects/mobilihd/mobilihd-case-type-manage-view.webp",
+        "alt": "MobiliHD case type manage view"
+      }
+    ],
     "nextProject": {
       "title": "Customela — Contract Automation Platform",
       "slug": "customela-automation",

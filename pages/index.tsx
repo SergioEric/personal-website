@@ -45,7 +45,7 @@ const projects = [
     description:
       'Internal case and task management system featuring Kanban workflows, optimistic UI, and real-time state synchronization for a real estate agency.',
     imageUrl:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCsafQP4LUUxorknnqAEmid-V7_XhFtXM0N6IvbZsC_2YwJugFv9T0E4IenavIqA2U1_mzKvJoGZH1Q684f-k2KPDw2s0cJEFeBGmU8oU3OtUFRrl7Eos0se1bBhoNmRpKnIN1vNFqTBqita4kGDPgMOZcm6nx_-yG5oB5G8TY8pvVTF1g6DXSgtLhYcmumQpr5So8TOXcDUV6oxVdQXbWwS-pdWT05KLi0ygIa6dv0W25oVqhFaWR3MmP54uyhV-oKbLdvnWXlj4o',
+      'https://assets.devef.com/projects/mobilihd/mobilihd-dashboard.webp',
   },
   {
     title: 'JDI',
