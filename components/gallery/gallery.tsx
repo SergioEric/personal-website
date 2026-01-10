@@ -14,6 +14,8 @@ export default function Gallery({ images }: GalleryProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalImageIndex, setModalImageIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
@@ -42,6 +44,37 @@ export default function Gallery({ images }: GalleryProps) {
     document.body.style.overflow = 'unset';
   };
 
+  // Swipe detection constants
+  const minSwipeDistance = 50;
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = (isModal: boolean = false) => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isModal) {
+      if (isLeftSwipe) nextModalImage();
+      if (isRightSwipe) prevModalImage();
+    } else {
+      if (isLeftSwipe) nextImage();
+      if (isRightSwipe) prevImage();
+    }
+
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -57,7 +90,12 @@ export default function Gallery({ images }: GalleryProps) {
   return (
     <>
       {/* Carousel */}
-      <div className="w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-2xl bg-surface-dark relative group">
+      <div
+        className="w-full aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-2xl bg-surface-dark relative group"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={() => handleTouchEnd(false)}
+      >
         <div className="relative w-full h-full overflow-hidden">
           <div
             className="flex h-full transition-transform duration-700 ease-out"
@@ -135,6 +173,9 @@ export default function Gallery({ images }: GalleryProps) {
           <div
             className="relative w-full h-full flex items-center justify-center p-4 md:p-8 animate-in zoom-in-95 duration-300"
             onClick={(e) => e.stopPropagation()}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={() => handleTouchEnd(true)}
           >
             {/* Close Button */}
             <button
