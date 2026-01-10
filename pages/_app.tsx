@@ -14,8 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           name="description"
-          content="I'm Sergio Eric. Software Engineer by career, ui designer by passion focus
-          on create valuable products."
+          content="I'm Sergio Morales. Full-Stack Engineer helping teams ship scalable web products faster."
         />
         <meta name="keywords" content="Keywords" />
         <title>Devef - SergioEric</title>
