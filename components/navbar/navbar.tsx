@@ -70,7 +70,7 @@ const NavBar = () => {
           <div className="flex items-center gap-4">
             <Link href="/contact-me">
               <button className="flex items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-white text-sm font-bold shadow-md hover:bg-primary/90 transition-transform hover:scale-105">
-                <span className="truncate">Contactar</span>
+                <span className="truncate">Contact me</span>
               </button>
             </Link>
             <button
