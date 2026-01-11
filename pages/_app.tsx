@@ -5,7 +5,7 @@ import '../styles/global.css';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
       <Head>
         <meta charSet="utf-8" />
         <meta

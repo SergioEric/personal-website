@@ -4,6 +4,8 @@
 @plugin "@tailwindcss/container-queries";
 @plugin "@tailwindcss/forms";
 
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --color-primary: #3713ec;
   --color-background-light: #f6f6f8;
@@ -50,7 +52,7 @@ body {
   --skills-border: 6px;
 }
 
-[data-theme='dark'] {
+.dark {
   --background: black;
   --foreground: #bfbfbf;
 
